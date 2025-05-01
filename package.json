@@ -1,0 +1,22 @@
+{
+  "name": "infokes-service",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.2.0",
+    "@neondatabase/serverless": "^1.0.0",
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.43.1",
+    "elysia": "latest",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "drizzle-kit": "^0.31.0",
+    "tsx": "^4.19.4"
+  },
+  "module": "src/index.js"
+}
