@@ -11,10 +11,11 @@ export function buildFolderTree(items: FolderItem[]): FolderTreeNode[] {
   }
 
   for (const item of map.values()) {
-    if (item.parentId === null || !map.has(item.parentId)) {
+    const parentId = item.parentId;
+    if (parentId === null || parentId === undefined || !map.has(parentId)) {
       roots.push(item);
     } else {
-      map.get(item.parentId)!.children.push(item);
+      map.get(parentId)!.children.push(item);
     }
   }
 
