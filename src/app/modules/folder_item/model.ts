@@ -2,7 +2,7 @@ export type FolderItem = {
   id: number;
   name: string;
   type: string;
-  parentId: number | null;
+  parentId?: number | null;
 };
 
 export type FolderTreeNode = {

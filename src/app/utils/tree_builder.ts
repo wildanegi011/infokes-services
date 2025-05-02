@@ -1,4 +1,4 @@
-import { FolderItem, FolderTreeNode } from "../folder_item/model";
+import { FolderItem, FolderTreeNode } from "../modules/folder_item/model";
 
 type TreeNode = FolderItem & { children: TreeNode[] };
 
